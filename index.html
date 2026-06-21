@@ -1,0 +1,644 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfolio of Anirudh Bhatt - Computer Science Undergraduate & Full Stack Developer. Portfolio showcasing skills in React, Node.js, MongoDB, and AI-powered applications.">
+  <title>Anirudh Bhatt | Portfolio</title>
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500&family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+  <!-- Bootstrap 5 CSS CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <!-- Bootstrap Icons CDN -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <nav class="navbar navbar-expand-lg fixed-top custom-navbar">
+    <div class="container">
+      <a class="navbar-brand logo" href="#">
+        <span class="logo-bracket">&lt;</span>Anirudh<span class="logo-bracket">/&gt;</span>
+      </a>
+      <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="toggler-icon top-bar"></span>
+        <span class="toggler-icon middle-bar"></span>
+        <span class="toggler-icon bottom-bar"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto text-center">
+          <li class="nav-item">
+            <a class="nav-link active" href="#hero">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#skills">Skills</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#projects">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#experience">Experience</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Header -->
+  <header id="hero" class="hero-section d-flex align-items-center">
+    <div class="container">
+      <div class="row align-items-center gy-5">
+        <div class="col-lg-7 text-center text-lg-start">
+          <div class="badge-container mb-3">
+            <span class="welcome-badge"><i class="bi bi-cpu"></i> Available for Internships</span>
+          </div>
+          <h1 class="hero-title mb-3">
+            Hi, I'm <span class="highlight-gradient">Anirudh Bhatt</span>
+          </h1>
+          <h2 class="hero-subtitle mb-4">
+            B.Tech Computer Science Student &amp; Full Stack Developer
+          </h2>
+          <p class="hero-desc mb-5 text-muted-custom">
+            Undergraduate at UPES specializing in Full Stack Engineering and AI-powered applications. Passionate about engineering high-quality workflow systems and building modern web solutions.
+          </p>
+          <div class="hero-buttons d-flex gap-3 justify-content-center justify-content-lg-start flex-wrap align-items-center">
+            <a href="#contact" class="btn btn-primary-custom">Get In Touch <i class="bi bi-arrow-right-short ms-1"></i></a>
+            <a href="#projects" class="btn btn-secondary-custom">View Work</a>
+            <div class="hero-social-links d-flex gap-3 ms-lg-2">
+              <a href="https://github.com/AnirudhBhatt" target="_blank" class="hero-social-icon" title="GitHub"><i class="bi bi-github"></i></a>
+              <a href="https://www.linkedin.com/in/anirudhbhatt" target="_blank" class="hero-social-icon" title="LinkedIn"><i class="bi bi-linkedin"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-5 d-flex justify-content-center">
+          <div class="profile-img-container">
+            <div class="glow-ring-1"></div>
+            <div class="glow-ring-2"></div>
+            <img src="profile.jpg" alt="Anirudh Bhatt Profile Photo" class="profile-image img-fluid">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="wave-shape">
+      <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+        <path d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z" class="shape-fill"></path>
+      </svg>
+    </div>
+  </header>
+
+  <main>
+    <!-- About Me Section -->
+    <section id="about" class="about-section py-6">
+      <div class="container">
+        <div class="section-header text-center mb-6">
+          <h2 class="section-title">About Me</h2>
+          <div class="title-underline"></div>
+        </div>
+        <div class="row align-items-stretch gy-4">
+          <div class="col-lg-6 d-flex">
+            <div class="about-card glass-card p-5 w-100">
+              <h3 class="card-subtitle-custom mb-3"><i class="bi bi-person-lines-fill text-primary-color me-2"></i>My Journey</h3>
+              <p class="about-text">
+                I am a Computer Science undergraduate at the <strong>University of Petroleum and Energy Studies (UPES)</strong>, graduating in 2027. My engineering philosophy revolves around solving real-world challenges with robust architectures and user-centric designs.
+              </p>
+              <p class="about-text">
+                I have a strong background in developing scalable, role-based workflow applications and multilingual NLP chatbots. Whether working with cloud tools, database aggregation, or AI APIs, I focus on performance, scalability, and code cleanliness.
+              </p>
+              <div class="personal-info mt-4">
+                <div class="row gy-3">
+                  <div class="col-sm-6">
+                    <span class="info-label">Location:</span> Dehradun, India
+                  </div>
+                  <div class="col-sm-6">
+                    <span class="info-label">Email:</span> <a href="mailto:anirudhbhatt2003@gmail.com" class="info-value-link">anirudhbhatt2003@gmail.com</a>
+                  </div>
+                  <div class="col-sm-6">
+                    <span class="info-label">GitHub:</span> <a href="https://github.com/AnirudhBhatt" target="_blank" class="info-value-link">github.com/AnirudhBhatt</a>
+                  </div>
+                  <div class="col-sm-6">
+                    <span class="info-label">LinkedIn:</span> <a href="https://www.linkedin.com/in/anirudhbhatt" target="_blank" class="info-value-link">linkedin.com/in/anirudhbhatt</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 d-flex">
+            <div class="education-card glass-card p-5 w-100">
+              <h3 class="card-subtitle-custom mb-4"><i class="bi bi-mortarboard text-secondary-color me-2"></i>Education</h3>
+              <div class="timeline">
+                <div class="timeline-item">
+                  <div class="timeline-dot"></div>
+                  <h4 class="timeline-title">B.Tech in Computer Science Engineering</h4>
+                  <p class="timeline-inst">University of Petroleum and Energy Studies (UPES) | 2023 - 2027</p>
+                  <span class="badge badge-gpa">CGPA: 6.97/10</span>
+                </div>
+                <div class="timeline-item">
+                  <div class="timeline-dot"></div>
+                  <h4 class="timeline-title">Intermediate (PCM)</h4>
+                  <p class="timeline-inst">Manava Bharati School | 2021 - 2022</p>
+                  <span class="badge badge-gpa">Percentage: 65.8%</span>
+                </div>
+                <div class="timeline-item">
+                  <div class="timeline-dot"></div>
+                  <h4 class="timeline-title">High School</h4>
+                  <p class="timeline-inst">Baluni Public School | 2018 - 2019</p>
+                  <span class="badge badge-gpa">Percentage: 76.3%</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills-section py-6 bg-dark-variant">
+      <div class="container">
+        <div class="section-header text-center mb-6">
+          <h2 class="section-title">My Skills</h2>
+          <div class="title-underline"></div>
+        </div>
+        <div class="row g-4">
+          <!-- Languages -->
+          <div class="col-md-6 col-lg-4">
+            <div class="skill-card glass-card p-4 h-100">
+              <div class="skill-card-icon"><i class="bi bi-code-slash text-primary-color"></i></div>
+              <h3 class="skill-category-title">Languages</h3>
+              <ul class="skill-list list-unstyled">
+                <li>JavaScript <span class="text-muted-custom">(ES6+)</span></li>
+                <li>Python</li>
+                <li>Java</li>
+                <li>C</li>
+              </ul>
+            </div>
+          </div>
+          <!-- Frontend -->
+          <div class="col-md-6 col-lg-4">
+            <div class="skill-card glass-card p-4 h-100">
+              <div class="skill-card-icon"><i class="bi bi-window-sidebar text-secondary-color"></i></div>
+              <h3 class="skill-category-title">Frontend</h3>
+              <ul class="skill-list list-unstyled">
+                <li>React.js</li>
+                <li>Next.js</li>
+                <li>HTML5 &amp; CSS3</li>
+                <li>TailwindCSS</li>
+                <li>Bootstrap</li>
+              </ul>
+            </div>
+          </div>
+          <!-- Backend -->
+          <div class="col-md-6 col-lg-4">
+            <div class="skill-card glass-card p-4 h-100">
+              <div class="skill-card-icon"><i class="bi bi-server text-primary-color"></i></div>
+              <h3 class="skill-category-title">Backend</h3>
+              <ul class="skill-list list-unstyled">
+                <li>Spring Boot</li>
+                <li>Microservices</li>
+                <li>Node.js &amp; Express.js</li>
+                <li>RESTful APIs</li>
+              </ul>
+            </div>
+          </div>
+          <!-- Databases -->
+          <div class="col-md-6 col-lg-4">
+            <div class="skill-card glass-card p-4 h-100">
+              <div class="skill-card-icon"><i class="bi bi-database text-secondary-color"></i></div>
+              <h3 class="skill-category-title">Databases</h3>
+              <ul class="skill-list list-unstyled">
+                <li>MongoDB <span class="text-muted-custom">(Aggregations)</span></li>
+                <li>MySQL</li>
+              </ul>
+            </div>
+          </div>
+          <!-- Concepts -->
+          <div class="col-md-6 col-lg-4">
+            <div class="skill-card glass-card p-4 h-100">
+              <div class="skill-card-icon"><i class="bi bi-diagram-3 text-primary-color"></i></div>
+              <h3 class="skill-category-title">Concepts</h3>
+              <ul class="skill-list list-unstyled">
+                <li>Data Structures</li>
+                <li>Authentication (JWT, Hashing)</li>
+                <li>OOP Principles</li>
+                <li>NLP &amp; Embeddings</li>
+              </ul>
+            </div>
+          </div>
+          <!-- Tools -->
+          <div class="col-md-6 col-lg-4">
+            <div class="skill-card glass-card p-4 h-100">
+              <div class="skill-card-icon"><i class="bi bi-tools text-secondary-color"></i></div>
+              <h3 class="skill-category-title">Tools &amp; DevOps</h3>
+              <ul class="skill-list list-unstyled">
+                <li>Docker &amp; Docker Compose</li>
+                <li>Apache Maven</li>
+                <li>Git &amp; GitHub</li>
+                <li>Postman</li>
+                <li>Vercel</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section (Using Bootstrap Carousel component) -->
+    <section id="projects" class="projects-section py-6">
+      <div class="container">
+        <div class="section-header text-center mb-6">
+          <h2 class="section-title">Projects</h2>
+          <div class="title-underline"></div>
+        </div>
+        
+        <!-- Bootstrap Carousel Component -->
+        <div id="projectCarousel" class="carousel slide project-carousel-custom" data-bs-ride="carousel" data-bs-interval="6000">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#projectCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Project 1"></button>
+            <button type="button" data-bs-target="#projectCarousel" data-bs-slide-to="1" aria-label="Project 2"></button>
+            <button type="button" data-bs-target="#projectCarousel" data-bs-slide-to="2" aria-label="Project 3"></button>
+          </div>
+          
+          <div class="carousel-inner">
+            <!-- Project 1 -->
+            <div class="carousel-item active">
+              <div class="carousel-project-card glass-card p-5">
+                <div class="row align-items-center gy-4">
+                  <div class="col-lg-7">
+                    <div class="project-tag mb-2">AI &amp; Full Stack</div>
+                    <h3 class="project-card-title mb-3">AI Interview Simulator</h3>
+                    <p class="project-card-desc mb-4 text-muted-custom">
+                      An AI-powered full-stack web application designed to simulate technical interviews, providing adaptive question generation and automated user feedback.
+                    </p>
+                    <ul class="project-points list-unstyled mb-4">
+                      <li><i class="bi bi-patch-check-fill text-primary-color me-2"></i> Integrated OpenAI API to dynamically generate context-aware questions.</li>
+                      <li><i class="bi bi-patch-check-fill text-primary-color me-2"></i> Implemented an evaluation feedback system to grade and critique performance.</li>
+                      <li><i class="bi bi-patch-check-fill text-primary-color me-2"></i> Developed robust Node.js backend endpoints with React interfaces.</li>
+                    </ul>
+                    <div class="project-tech-tags d-flex flex-wrap gap-2">
+                      <span class="tech-tag">React.js</span>
+                      <span class="tech-tag">Node.js</span>
+                      <span class="tech-tag">OpenAI API</span>
+                      <span class="tech-tag">Python</span>
+                    </div>
+                  </div>
+                  <div class="col-lg-5 d-flex justify-content-center">
+                    <div class="project-icon-placeholder">
+                      <i class="bi bi-chat-text-fill project-main-icon"></i>
+                      <div class="project-pulse"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <!-- Project 2 -->
+            <div class="carousel-item">
+              <div class="carousel-project-card glass-card p-5">
+                <div class="row align-items-center gy-4">
+                  <div class="col-lg-7">
+                    <div class="project-tag mb-2">Cloud-Native &amp; Microservices</div>
+                    <h3 class="project-card-title mb-3">Workflow Automation System</h3>
+                    <p class="project-card-desc mb-4 text-muted-custom">
+                      A production-grade, cloud-native backend platform built using Spring Boot microservices, supporting real-time task management and event-driven architectures.
+                    </p>
+                    <ul class="project-points list-unstyled mb-4">
+                      <li><i class="bi bi-patch-check-fill text-secondary-color me-2"></i> Engineered a 5-service mesh (Eureka Discovery, API Gateway, Auth Service, Task Service, Notification Service) orchestrated via Docker Compose.</li>
+                      <li><i class="bi bi-patch-check-fill text-secondary-color me-2"></i> Integrated RabbitMQ (AMQP) for asynchronous inter-service event delivery and MongoDB for distributed data persistence.</li>
+                      <li><i class="bi bi-patch-check-fill text-secondary-color me-2"></i> Implemented centralized token validation via Spring Cloud Gateway, BCrypt password hashing, and Spring Security.</li>
+                    </ul>
+                    <div class="project-tech-tags d-flex flex-wrap gap-2">
+                      <span class="tech-tag-2">Spring Boot</span>
+                      <span class="tech-tag-2">RabbitMQ</span>
+                      <span class="tech-tag-2">Docker Compose</span>
+                      <span class="tech-tag-2">Netflix Eureka</span>
+                    </div>
+                  </div>
+                  <div class="col-lg-5 d-flex justify-content-center">
+                    <div class="project-icon-placeholder-2">
+                      <i class="bi bi-diagram-3-fill project-main-icon"></i>
+                      <div class="project-pulse-2"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <!-- Project 3 -->
+            <div class="carousel-item">
+              <div class="carousel-project-card glass-card p-5">
+                <div class="row align-items-center gy-4">
+                  <div class="col-lg-7">
+                    <div class="project-tag mb-2">SIH Project</div>
+                    <h3 class="project-card-title mb-3">Language Agnostic Chatbot</h3>
+                    <p class="project-card-desc mb-4 text-muted-custom">
+                      A highly optimized multilingual AI chatbot built during the Smart India Hackathon internal round to handle intent recognition across multiple tongues.
+                    </p>
+                    <ul class="project-points list-unstyled mb-4">
+                      <li><i class="bi bi-patch-check-fill text-primary-color me-2"></i> Leveraged semantic search models for language-independent queries.</li>
+                      <li><i class="bi bi-patch-check-fill text-primary-color me-2"></i> Developed text normalization routines and contextual conversation memory caches.</li>
+                      <li><i class="bi bi-patch-check-fill text-primary-color me-2"></i> Reduced translation latencies and deployed easily using Next.js on Vercel.</li>
+                    </ul>
+                    <div class="project-tech-tags d-flex flex-wrap gap-2">
+                      <span class="tech-tag">Next.js</span>
+                      <span class="tech-tag">TypeScript</span>
+                      <span class="tech-tag">NLP</span>
+                      <span class="tech-tag">Vercel</span>
+                    </div>
+                  </div>
+                  <div class="col-lg-5 d-flex justify-content-center">
+                    <div class="project-icon-placeholder">
+                      <i class="bi bi-translate project-main-icon"></i>
+                      <div class="project-pulse"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Controls -->
+          <button class="carousel-control-prev" type="button" data-bs-target="#projectCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon-custom" aria-hidden="true">
+              <i class="bi bi-chevron-left"></i>
+            </span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#projectCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon-custom" aria-hidden="true">
+              <i class="bi bi-chevron-right"></i>
+            </span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience & Achievements Section -->
+    <section id="experience" class="experience-section py-6 bg-dark-variant">
+      <div class="container">
+        <div class="row gy-5">
+          <!-- Experience column -->
+          <div class="col-lg-7">
+            <div class="section-header mb-5">
+              <h2 class="section-title text-start">Experience</h2>
+              <div class="title-underline ms-0"></div>
+            </div>
+            
+            <div class="experience-timeline">
+              <!-- Job 1 -->
+              <div class="exp-item glass-card p-4 mb-4">
+                <div class="exp-header d-flex justify-content-between align-items-start flex-wrap gap-2 mb-3">
+                  <div>
+                    <h4 class="exp-role">Digital Strategy Intern</h4>
+                    <span class="exp-company text-primary-color">Blanq Inc.</span>
+                  </div>
+                  <span class="badge badge-exp-date">Jun 2025 – Jul 2025</span>
+                </div>
+                <ul class="exp-points text-muted-custom">
+                  <li>Led and managed the execution of "Keep it Reel" visual marketing content, expanding viewer interaction rate by approximately 25%.</li>
+                  <li>Partnered directly with executives to build standard onboarding templates and brand-story messaging strategies.</li>
+                  <li>Drafted targeted playbook guides, enhancing team collaboration and external outreach communication by 20%.</li>
+                </ul>
+              </div>
+              <!-- Job 2 -->
+              <div class="exp-item glass-card p-4">
+                <div class="exp-header d-flex justify-content-between align-items-start flex-wrap gap-2 mb-3">
+                  <div>
+                    <h4 class="exp-role">Marketing Intern</h4>
+                    <span class="exp-company text-secondary-color">The Art of Making Foundation</span>
+                  </div>
+                  <span class="badge badge-exp-date">Jun 2024 – Jul 2024</span>
+                </div>
+                <ul class="exp-points text-muted-custom">
+                  <li>Authored and structured an interactive introductory educational outline on 3D Printing technologies.</li>
+                  <li>Assisted in implementing several local corporate social responsibility programs, helping over 100 individuals.</li>
+                  <li>Evaluated internal NGO reporting procedures, spotting workflow inefficiencies to clarify action metrics.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Achievements column -->
+          <div class="col-lg-5">
+            <div class="section-header mb-5">
+              <h2 class="section-title text-start">Achievements</h2>
+              <div class="title-underline ms-0"></div>
+            </div>
+            
+            <div class="achievements-container d-flex flex-column gap-4">
+              <!-- Ach 1 -->
+              <div class="achievement-item glass-card p-4 d-flex gap-3 align-items-center">
+                <div class="achievement-icon-wrapper prim"><i class="bi bi-microsoft"></i></div>
+                <div>
+                  <h4 class="achievement-title">Microsoft ICT Conclave</h4>
+                  <p class="achievement-desc text-muted-custom mb-0">Presented robotic vehicle systems research.</p>
+                </div>
+              </div>
+              <!-- Ach 2 -->
+              <div class="achievement-item glass-card p-4 d-flex gap-3 align-items-center">
+                <div class="achievement-icon-wrapper sec"><i class="bi bi-award-fill"></i></div>
+                <div>
+                  <h4 class="achievement-title">Mathematics Olympiad (SOF)</h4>
+                  <p class="achievement-desc text-muted-custom mb-0">Awarded Silver Medalist globally.</p>
+                </div>
+              </div>
+              <!-- Ach 3 -->
+              <div class="achievement-item glass-card p-4 d-flex gap-3 align-items-center">
+                <div class="achievement-icon-wrapper prim"><i class="bi bi-trophy-fill"></i></div>
+                <div>
+                  <h4 class="achievement-title">Smart India Hackathon (SIH)</h4>
+                  <p class="achievement-desc text-muted-custom mb-0">Qualified internal selection rounds.</p>
+                </div>
+              </div>
+              <!-- Ach 4 -->
+              <div class="achievement-item glass-card p-4 d-flex gap-3 align-items-center">
+                <div class="achievement-icon-wrapper sec"><i class="bi bi-activity"></i></div>
+                <div>
+                  <h4 class="achievement-title">Inter-School District Athletics</h4>
+                  <p class="achievement-desc text-muted-custom mb-0">Gold Medalist in Shot Put.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section py-6">
+      <div class="container">
+        <div class="section-header text-center mb-6">
+          <h2 class="section-title">Get In Touch</h2>
+          <div class="title-underline"></div>
+        </div>
+        
+        <div class="row align-items-stretch gy-5">
+          <!-- Information cards -->
+          <div class="col-lg-5 d-flex flex-column justify-content-between">
+            <div class="contact-info-card glass-card p-4 d-flex align-items-center gap-3">
+              <div class="contact-icon-box"><i class="bi bi-envelope-fill"></i></div>
+              <div>
+                <h4 class="contact-info-title">Email Me</h4>
+                <a href="mailto:anirudhbhatt2003@gmail.com" class="contact-info-value">anirudhbhatt2003@gmail.com</a>
+              </div>
+            </div>
+            
+            <div class="contact-info-card glass-card p-4 d-flex align-items-center gap-3 my-4">
+              <div class="contact-icon-box"><i class="bi bi-telephone-fill"></i></div>
+              <div>
+                <h4 class="contact-info-title">Call Me</h4>
+                <a href="tel:+917906615714" class="contact-info-value">+91 7906615714</a>
+              </div>
+            </div>
+            
+            <div class="contact-info-card glass-card p-4 d-flex align-items-center gap-3">
+              <div class="contact-icon-box"><i class="bi bi-geo-alt-fill"></i></div>
+              <div>
+                <h4 class="contact-info-title">Location</h4>
+                <span class="contact-info-value">Dehradun, Uttarakhand, India</span>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Contact form -->
+          <div class="col-lg-7">
+            <div class="contact-form-wrapper glass-card p-5">
+              <form id="contactForm" class="needs-validation" novalidate>
+                <div class="row g-3">
+                  <div class="col-md-6">
+                    <div class="form-group-custom">
+                      <input type="text" class="form-control-custom" id="userName" required placeholder=" ">
+                      <label for="userName" class="form-label-custom">Your Name</label>
+                      <div class="invalid-feedback">Please enter your name.</div>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="form-group-custom">
+                      <input type="email" class="form-control-custom" id="userEmail" required placeholder=" ">
+                      <label for="userEmail" class="form-label-custom">Your Email</label>
+                      <div class="invalid-feedback">Please enter a valid email address.</div>
+                    </div>
+                  </div>
+                  <div class="col-12">
+                    <div class="form-group-custom">
+                      <input type="text" class="form-control-custom" id="msgSubject" required placeholder=" ">
+                      <label for="msgSubject" class="form-label-custom">Subject</label>
+                      <div class="invalid-feedback">Please enter a subject.</div>
+                    </div>
+                  </div>
+                  <div class="col-12">
+                    <div class="form-group-custom">
+                      <textarea class="form-control-custom" id="userMsg" rows="5" required placeholder=" "></textarea>
+                      <label for="userMsg" class="form-label-custom">Message</label>
+                      <div class="invalid-feedback">Please write a message.</div>
+                    </div>
+                  </div>
+                  <div class="col-12 text-end mt-4">
+                    <button type="submit" class="btn btn-primary-custom w-100 py-3">Send Message <i class="bi bi-send ms-2"></i></button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer-section py-5">
+    <div class="container text-center">
+      <a class="footer-logo mb-3 d-inline-block" href="#">
+        <span class="logo-bracket">&lt;</span>Anirudh<span class="logo-bracket">/&gt;</span>
+      </a>
+      <p class="footer-tagline text-muted-custom mb-4">CS Student &amp; Developer | Building robust digital solutions</p>
+      
+      <!-- Social links -->
+      <div class="social-links-footer d-flex justify-content-center gap-3 mb-4">
+        <a href="https://github.com/AnirudhBhatt" target="_blank" aria-label="GitHub"><i class="bi bi-github"></i></a>
+        <a href="https://www.linkedin.com/in/anirudhbhatt" target="_blank" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+        <a href="mailto:anirudhbhatt2003@gmail.com" aria-label="Email"><i class="bi bi-envelope"></i></a>
+      </div>
+      
+      <div class="footer-copyright">
+        <p class="mb-0 text-muted-custom">&copy; 2026 Anirudh Bhatt. All Rights Reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap Success Modal Component -->
+  <div class="modal fade success-modal-custom" id="successModal" tabindex="-1" aria-labelledby="successModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content glass-card">
+        <div class="modal-header border-0 pb-0">
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body text-center pt-0 pb-5 px-5">
+          <div class="success-icon-wrapper mb-4">
+            <i class="bi bi-check-circle-fill text-success-custom"></i>
+          </div>
+          <h3 class="modal-title-custom mb-3" id="successModalLabel">Message Sent!</h3>
+          <p class="modal-text-custom text-muted-custom mb-4">
+            Thank you for reaching out, <span id="modalClientName" class="text-white fw-bold"></span>! Your message has been received, and I will get back to you shortly.
+          </p>
+          <button type="button" class="btn btn-primary-custom px-5" data-bs-dismiss="modal">Awesome</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bootstrap Bundle with Popper JS CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  
+  <!-- Custom Form Handler Script -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const form = document.getElementById('contactForm');
+      const modal = new bootstrap.Modal(document.getElementById('successModal'));
+      const modalClientName = document.getElementById('modalClientName');
+
+      form.addEventListener('submit', function (event) {
+        event.preventDefault();
+        event.stopPropagation();
+
+        if (form.checkValidity()) {
+          // Set client name in modal
+          const nameInput = document.getElementById('userName');
+          modalClientName.textContent = nameInput.value;
+          
+          // Show bootstrap success modal
+          modal.show();
+          
+          // Reset form validation and fields
+          form.reset();
+          form.classList.remove('was-validated');
+        } else {
+          form.classList.add('was-validated');
+        }
+      }, false);
+      
+      // Close navbar toggler on nav-link click in mobile
+      const navLinks = document.querySelectorAll('.nav-link');
+      const menuToggle = document.getElementById('navbarNav');
+      const bsCollapse = new bootstrap.Collapse(menuToggle, {toggle:false});
+      
+      navLinks.forEach((link) => {
+        link.addEventListener('click', () => {
+          if (menuToggle.classList.contains('show')) {
+            bsCollapse.hide();
+          }
+        });
+      });
+    });
+  </script>
+</body>
+</html>

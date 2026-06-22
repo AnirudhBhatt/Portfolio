@@ -512,32 +512,32 @@
           <!-- Contact form -->
           <div class="col-lg-7">
             <div class="contact-form-wrapper glass-card p-5">
-              <form id="contactForm" class="needs-validation" novalidate>
+              <form id="contactForm" action="mailto:anirudhbhatt2003@gmail.com" method="POST" enctype="text/plain" class="needs-validation" novalidate>
                 <div class="row g-3">
                   <div class="col-md-6">
                     <div class="form-group-custom">
-                      <input type="text" class="form-control-custom" id="userName" required placeholder=" ">
+                      <input type="text" name="Name" class="form-control-custom" id="userName" required placeholder=" ">
                       <label for="userName" class="form-label-custom">Your Name</label>
                       <div class="invalid-feedback">Please enter your name.</div>
                     </div>
                   </div>
                   <div class="col-md-6">
                     <div class="form-group-custom">
-                      <input type="email" class="form-control-custom" id="userEmail" required placeholder=" ">
+                      <input type="email" name="Email" class="form-control-custom" id="userEmail" required placeholder=" ">
                       <label for="userEmail" class="form-label-custom">Your Email</label>
                       <div class="invalid-feedback">Please enter a valid email address.</div>
                     </div>
                   </div>
                   <div class="col-12">
                     <div class="form-group-custom">
-                      <input type="text" class="form-control-custom" id="msgSubject" required placeholder=" ">
+                      <input type="text" name="Subject" class="form-control-custom" id="msgSubject" required placeholder=" ">
                       <label for="msgSubject" class="form-label-custom">Subject</label>
                       <div class="invalid-feedback">Please enter a subject.</div>
                     </div>
                   </div>
                   <div class="col-12">
                     <div class="form-group-custom">
-                      <textarea class="form-control-custom" id="userMsg" rows="5" required placeholder=" "></textarea>
+                      <textarea name="Message" class="form-control-custom" id="userMsg" rows="5" required placeholder=" "></textarea>
                       <label for="userMsg" class="form-label-custom">Message</label>
                       <div class="invalid-feedback">Please write a message.</div>
                     </div>
@@ -607,10 +607,11 @@
       const modalClientName = document.getElementById('modalClientName');
 
       form.addEventListener('submit', function (event) {
-        event.preventDefault();
-        event.stopPropagation();
-
-        if (form.checkValidity()) {
+        if (!form.checkValidity()) {
+          event.preventDefault();
+          event.stopPropagation();
+          form.classList.add('was-validated');
+        } else {
           // Set client name in modal
           const nameInput = document.getElementById('userName');
           modalClientName.textContent = nameInput.value;
@@ -618,11 +619,11 @@
           // Show bootstrap success modal
           modal.show();
           
-          // Reset form validation and fields
-          form.reset();
-          form.classList.remove('was-validated');
-        } else {
-          form.classList.add('was-validated');
+          // Reset form fields after a brief delay so the browser can trigger mailto first
+          setTimeout(() => {
+            form.reset();
+            form.classList.remove('was-validated');
+          }, 1000);
         }
       }, false);
       
